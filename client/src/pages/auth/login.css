@@ -1,0 +1,48 @@
+/* Login Page CSS */
+
+/* Container for form (right side) */
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+  min-height: 100vh;
+}
+
+/* Left side banner */
+.form-banner img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+
+/* Forgot password button styled like a link */
+.forgot-password-btn {
+  display: block;
+  margin: 8px auto 0;
+  background: none;
+  border: none;
+  color: #4a90e2;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  text-align: center;
+  transition: color 0.3s;
+}
+
+.forgot-password-btn:hover {
+  color: #357abd;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .form-banner {
+    display: none; /* hide image on small screens */
+  }
+  .form-container {
+    min-height: auto;
+    padding: 20px;
+  }
+}
